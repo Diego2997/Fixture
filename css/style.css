@@ -1,0 +1,91 @@
+*{
+    margin:0px;
+    padding: 0px;
+     box-sizing: border-box; 
+}
+
+body{
+    background: linear-gradient(45deg, #8AA6EB , #54F5F4);
+    
+}
+
+nav{
+    background-color: #2C3E50;
+    padding: 15px 8px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+nav a {
+    color: #aeb9c2;
+    padding: 0px 8px;
+    text-decoration: none;
+}
+.container-logo{
+    text-align: center;
+   margin-top: 80px;
+}
+
+
+.fase-grupos{
+    margin: 0px 50px;
+   
+}
+.fase-grupos h2{
+    color: white;
+    margin-bottom: 7px;
+   margin-top: 15px;
+}
+
+.fixture{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.grupos{
+    text-align: center;
+    background-color: #69BFF8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    width: 500px;
+   
+    
+}
+.equipos{
+    padding: 8px 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    gap: 15px;
+}
+.grupos .equipos:nth-child(even){
+    background-color: #DADADA;
+}
+.grupos .equipos:nth-child(odd){
+    background-color: white;
+}
+.fecha{
+    margin: 5px 0px;
+    color: grey;
+    font-size: 12px;
+}
+
+.banderas{
+    width: 35px;
+    height: 25px;
+}
+
+.clasificados{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    padding: 25px;
+}
