@@ -1,15 +1,17 @@
-*{
-    margin:0px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0px;
     padding: 0px;
-     box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(45deg, #8AA6EB , #54F5F4);
-    
+body {
+    background: linear-gradient(45deg, #8AA6EB, #54F5F4);
+    font-family: 'Montserrat', sans-serif;
 }
 
-nav{
+nav {
     background-color: #2C3E50;
     padding: 15px 8px;
     position: fixed;
@@ -22,79 +24,128 @@ nav a {
     padding: 0px 8px;
     text-decoration: none;
 }
-.container-logo{
+
+.container-logo {
     text-align: center;
-   margin-top: 80px;
+    margin-top: 80px;
 }
 
 
-.fase-grupos{
+.fase-grupos {
     margin: 0px 50px;
-   
-}
-.fase-grupos h2{
-    color: white;
-    margin-bottom: 7px;
-   margin-top: 15px;
 }
 
-.fixture{
+.fase-grupos h2 {
+    color: white;
+}
+
+.fixture {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 
-.grupos{
+.grupos {
     text-align: center;
     background-color: #69BFF8;
     color: white;
     display: flex;
     flex-direction: column;
-    margin-top: 5px;
-    width: 550px;
-   
-    
+    margin-top: 10px;
+    width: 30%;
 }
-.equipos{
+
+.equipos {
     padding: 8px 7px;
     display: flex;
     align-items: center;
     color: black;
     justify-content: space-between;
 }
-.grupos .equipos:nth-child(even){
+
+.grupos .equipos:nth-child(even) {
     background-color: #DADADA;
 }
-.grupos .equipos:nth-child(odd){
+
+.grupos .equipos:nth-child(odd) {
     background-color: white;
 }
-.fecha{
-    margin: 5px 0px;
+
+.fecha {
+    margin: 3px 0px;
     color: grey;
     font-size: 12px;
 }
 
-.banderas{
+.banderas {
     width: 45px;
     height: 45px;
 }
 
-.clasificados{
+.clasificados {
     width: 100%;
 }
 
-footer{
-    text-align: center;
-    padding: 25px;
+hr{
+    margin-bottom: 15px;
 }
 
-  .background{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 150px;
-} 
+footer {
+    text-align: center;
+}
+ footer a{
+ margin-top: 25px;
+ display: block;
+ }
+footer div{
+    background-color: rgb(24, 23, 23);
+    color: white;
+    padding: 25px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+
+
+/* DISPOSITIVOS SMALL */
+@media screen and (max-width: 767px){
+    .fixture{
+        flex-direction: column;
+        
+    }
+    .grupos{
+        width: 100%;
+    }
  
+    .container-logo img{
+        width: 70%;
+    }
+    h2{
+        font-size: 26px;
+    }
 
+    nav{
+        font-size: 20px;
+        text-align: center;
+    }
+}
 
+@media screen and (min-width:768px) and (max-width:991px){
+    .grupos{
+        width: 45%;
+    }
+    .container-logo img{
+        width: 60%;
+    }
+    .clasificados{
+        width: 100%;
+    }
+}
